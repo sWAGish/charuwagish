@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Charu ❤️ From Wagish</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div class="opening" id="opening">
+<h1>For Charu ❤️</h1>
+<p>From Wagish</p>
+<button onclick="startExperience()">Enter My Heart</button>
+</div>
+
+<div id="mainContent" class="main">
+
+<section class="hero">
+<h1>Charu ❤️ Wagish</h1>
+<p>You are my forever.</p>
+</section>
+
+<section class="letter">
+<h2>My Letter</h2>
+<p id="letterText"></p>
+</section>
+
+<section class="vows">
+<h2>My Promises 💍</h2>
+<p id="vowText"></p>
+<button onclick="nextVow()">Next Promise</button>
+</section>
+
+<section class="proposal">
+<h2>Charu… Will you stay mine forever?</h2>
+<button class="yesBtn" onclick="sayYes()">YES ❤️</button>
+</section>
+
+<section class="chat">
+<h2>Messages From Wagish 💌</h2>
+<div id="chatBox" class="chatBox">
+<div class="wagish">Wagish: I built this only for you ❤️</div>
+</div>
+<input id="userInput" placeholder="Reply to Wagish..." />
+<button onclick="sendMessage()">Send</button>
+</section>
+
+<section class="loveGame">
+<h2>💖 Catch My Love</h2>
+<div id="gameArea">
+<div id="basket">💌</div>
+</div>
+<p>Hearts Collected: <span id="score">0</span></p>
+<button onclick="startGame()">Start Game</button>
+</section>
+
+<section class="quiz">
+<h2>💍 How Well Do You Know Wagish?</h2>
+<p>What is Wagish’s favorite thing about you?</p>
+<button onclick="quizAnswer('smile')">Your Smile</button>
+<button onclick="quizAnswer('eyes')">Your Eyes</button>
+<button onclick="quizAnswer('everything')">Everything</button>
+<p id="quizResult"></p>
+</section>
+
+<section class="memoryGame">
+<h2>💌 Tap To Reveal A Secret</h2>
+<button onclick="revealMemory()">Reveal ❤️</button>
+<p id="memoryText"></p>
+</section>
+
+<button class="hiddenBtn" onclick="hiddenSurprise()">Secret Surprise 💖</button>
+
+</div>
+
+<div id="yesPopup" class="yesPopup">
+<div class="popupContent">
+<h1>She Said YES 💖</h1>
+<p>Charu… I promise forever. — Wagish 💍</p>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
